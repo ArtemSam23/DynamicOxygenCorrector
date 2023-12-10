@@ -1,4 +1,4 @@
-import { interpolationPoints as points } from './settings.js';
+import { interpolationPoints as points } from './config.js';
 
 
 function linearInterpolation(p, point1, point2) {

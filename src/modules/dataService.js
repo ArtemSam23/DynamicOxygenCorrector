@@ -1,5 +1,5 @@
 import { convertMaToKpa, convertMaToOxygenPercent } from './converter.js';
-import { pressureServerUrl, oxygenServerUrl } from './settings.js';
+import { pressureServerUrl, oxygenServerUrl } from './config.js';
 
 
 async function fetchData(url) {

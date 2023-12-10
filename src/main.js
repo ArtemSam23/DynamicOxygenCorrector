@@ -1,12 +1,12 @@
-import { T, Tcorr, requestPerMinute } from './modules/settings.js';
-import { maxPulseCorrectionThreshold } from './modules/settings.js';
+import { T, Tcorr, requestPerMinute } from './modules/config.js';
+import { maxPulseCorrectionThreshold } from './modules/config.js';
 import { getPressure, getOxygen } from './modules/dataService.js';
 import { setBarIndication, resetBarIndication } from './modules/methods.js';
 import { updateDisplay } from './modules/methods.js';
 import { setIntervalForTime } from './modules/utils.js';
 import { getEstimatedOxygen } from './modules/interpolation.js';
 import { turnOffDisplay, turnOnDisplay } from './modules/methods.js';
-import { setTime, setCorrectionTime } from './modules/settings.js';
+import { setTime, setCorrectionTime } from './modules/config.js';
 
 
 let intervalId = null;
