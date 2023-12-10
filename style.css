@@ -1,0 +1,156 @@
+:root {
+    --base-color: #ff6600;
+    /* Цвет бара */
+}
+
+@font-face {
+    font-family: "Digital-7 Mono";
+    src: url("digital-7 (mono).ttf");
+}
+
+.sensor {
+    aspect-ratio: 5/4;
+    background-color: var(--base-color);
+    border: 5px solid #fff;
+    padding: 1vw;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    margin: 1vw;
+}
+
+.sensor:first-child {
+    width: 30%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 2vw;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 20%;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.7vw;
+    height: 20%;
+    margin-top: 1.2em;
+}
+
+.subtitle>p:first-child {
+    font-size: 1vw;
+    margin: 0;
+}
+
+.title-img {
+    display: flex;
+    width: 1em;
+}
+
+.sensor-display {
+    background-color: #111;
+    color: var(--base-color);
+    padding: 1vw;
+    font-family: "Digital-7 Mono";
+    font-size: 5.5vw;
+    border-radius: .6vw;
+    height: 1em;
+    width: 5ch;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.inactive-display {
+    color: #222;
+}
+
+.link {
+    font-size: 0.9vw;
+    color: #fff;
+    margin-bottom: 15%;
+}
+
+.sensor-buttons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 1vw 0;
+}
+
+.sensor-buttons>button {
+    background-color: #eee;
+    border: none;
+    padding: 0.9vw 1.2vw;
+    margin: 0 0.7vw;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.sensor-buttons>button:hover {
+    background-color: #e4e4e4;
+}
+
+
+.bar-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    margin: 1vw 0;
+}
+
+.scale {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-size: 0.9vw;
+    /* Размер шрифта для шкалы */
+    height: 100%;
+}
+
+.bar {
+    box-sizing: border-box;
+    height: 100%;
+    width: 2.5vw;
+    /* Ширина бара */
+    margin-left: 10px;
+    margin-right: 10px;
+    border: .3vw solid #222;
+    background-color: #222;
+    border-radius: .4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar-indicator {
+    height: 4%;
+    border-radius: .2vw;
+    background-color: #333;
+}
+
+.active-bar-indicator {
+    background-color: red;
+    opacity: 0.6;
+}

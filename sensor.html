@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link id="theme-style" rel="stylesheet" href="style.css">
+  <title>Датчик</title>
+</head>
+
+<body>
+
+  <div class="sensor">
+    <div class="column">
+      <div class="subtitle">
+        <p>Измеритель</p>
+        <p>многопредельный</p>
+      </div>
+      <div class="bar-container">
+        <div class="scale">
+          <span>100%</span>
+          <span>80%</span>
+          <span>60%</span>
+          <span>40%</span>
+          <span>20%</span>
+          <span>0%</span>
+          <span>-20%</span>
+          <span>-40%</span>
+          <span>-60%</span>
+          <span>-80%</span>
+          <span>-100%</span>
+        </div>
+        <div class="bar" id="bar">
+        </div>
+        <div class="scale">
+          <span>100%</span>
+          <span>90%</span>
+          <span>80%</span>
+          <span>70%</span>
+          <span>60%</span>
+          <span>50%</span>
+          <span>40%</span>
+          <span>30%</span>
+          <span>20%</span>
+          <span>10%</span>
+          <span>0%</span>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="title">
+        <p>КБ "АГАВА"</p>
+        <img class="title-img" src="rostest.svg" alt="Rostest">
+      </div>
+      <div id="screen" class="sensor-display inactive-display">
+        88.88
+      </div>
+      <a href="https://www.kb-agava.ru" class="link">https://www.kb-agava.ru</a>
+      <div class="sensor-buttons">
+        <button id="plus-button">▲</button>
+        <button id="select-button">■</button>
+        <button id="minus-button">▼</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="setup.js"></script>
+<script src="main.js" type="module"></script>
+</html>
