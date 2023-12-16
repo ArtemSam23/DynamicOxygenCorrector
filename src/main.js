@@ -103,7 +103,7 @@ async function main() {
 let popup = null;
 
 function openSettings() {
-    popup = window.open('settings.html', 'width=400,height=400', popup=true);
+    popup = window.open('src/settings.html', 'width=400,height=400', popup=true);
 }
 
 window.addEventListener('message', (event) => {
